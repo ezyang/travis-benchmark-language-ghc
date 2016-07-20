@@ -1,0 +1,15 @@
+language: haskell
+sudo: false
+ghc: 7.10
+matrix:
+  include:
+   - env: RUN=1
+   - env: RUN=2
+   - env: RUN=3
+   - env: RUN=4
+script:
+ - lsb_release -a
+ - ghc --version
+ - echo "main = return ()" > Main.hs
+ - ghc --make Main.hs
+ - ghc --make Main.hs -prof
