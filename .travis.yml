@@ -1,4 +1,5 @@
 language: haskell
+# See https://blog.travis-ci.com/announcing_support_for_haskell_on_travis_ci/
 sudo: false
 ghc: "7.10"
 matrix:
@@ -7,7 +8,7 @@ matrix:
    - env: RUN=2
    - env: RUN=3
    - env: RUN=4
-install: # do not use default
+install: true
 script:
  - lsb_release -a
  - ghc --version
