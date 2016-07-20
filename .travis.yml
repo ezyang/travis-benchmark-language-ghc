@@ -15,6 +15,7 @@ before_install: true
 install: true
 before_script: true
 script:
+ - ls /usr/local/ghc
  - ghc --version
  - echo "main = return ()" > Main.hs
  - ghc --make Main.hs
