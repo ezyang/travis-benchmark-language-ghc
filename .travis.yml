@@ -1,16 +1,20 @@
 language: haskell
 # See https://blog.travis-ci.com/announcing_support_for_haskell_on_travis_ci/
 sudo: false
-ghc: "7.10"
+# Some notes:
+#   - ghc: "7.10" does not seem to work
+ghc: "7.10.3"
 matrix:
   include:
    - env: RUN=1
    - env: RUN=2
    - env: RUN=3
    - env: RUN=4
+before_install: true
+# These two definitely want to be disabled
 install: true
+before_script: true
 script:
- - lsb_release -a
  - ghc --version
  - echo "main = return ()" > Main.hs
  - ghc --make Main.hs
