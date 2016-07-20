@@ -1,6 +1,6 @@
 language: haskell
 sudo: false
-ghc: 7.10
+ghc: "7.10"
 matrix:
   include:
    - env: RUN=1
