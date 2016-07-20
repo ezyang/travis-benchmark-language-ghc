@@ -1,4 +1,4 @@
-# travis-benchmark-language-ghc [![Build Status](https://secure.travis-ci.org/ezyang/travis-benchmark-language-haskell.svg?branch=master)](http://travis-ci.org/ezyang/travis-benchmark-language-haskell)
+# travis-benchmark-language-ghc [![Build Status](https://api.travis-ci.org/ezyang/travis-benchmark-language-ghc.svg)](http://travis-ci.org/ezyang/travis-benchmark-language-haskell)
 
 Test for `language: haskell` speed.
 
